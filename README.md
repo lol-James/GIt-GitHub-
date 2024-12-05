@@ -85,7 +85,7 @@ The right process for collaborating with Git and GitHub
 - Step4：```git diff``` Check what chages have been made
 - Step5：```git add .```
 - Step6：```git commit -m "commit msg"``` commit changes and create a node on sub-branch
-- Step7：```git push origin my-feature(custom sub-branch name)``` push sub-branch onto GitHub
+- Step7：```git push origin my-feature(custom sub-branch name)``` push sub-branch onto GitHub  
   **if failed** => version conflict occurred(main branch updates after you cloned it)
   **Solution：sync latest version main branch to your sub-branch**
   - (1) ```git checkout main```
