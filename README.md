@@ -50,13 +50,13 @@ Git常用指令(背)
   (1) 將未追蹤的file加入git追蹤/將特定副檔名的file加入git追蹤/全部file納入git追蹤(通常都是直接```git add .```)，有新的file就要用
   (2) 變更納入暫存區(存檔到git)，很常用，時不時就會輸入一次```git add .```來儲存狀態，刪檔案也要
 - ```git status```：查看當前file的狀態
-> 文件有以下幾種狀態，在 VS Code 中，這些文件狀態會用不同的代號來表示：
-> U: Untracked 文件（未追蹤的文件），在左側文件資源管理器中會顯示一個 U 圖標
-> M: Modified 文件（已修改的文件），顯示為一個 M 圖標。
-> A: Added 文件（已暫存的文件），會顯示為一個 A 圖標，表示這個文件已經被 git add 暫存。
-> C: Copied 文件，表示這個文件是從另一個文件複製過來的。
-> D: Deleted 文件（已刪除的文件），表示這個文件已被刪除。
-> R: Renamed 文件，表示這個文件已被重命名。
+  - 文件有以下幾種狀態，在 VS Code 中，這些文件狀態會用不同的代號來表示：
+  - U: Untracked 文件（未追蹤的文件），在左側文件資源管理器中會顯示一個 U 圖標
+  - M: Modified 文件（已修改的文件），顯示為一個 M 圖標。
+  - A: Added 文件（已暫存的文件），會顯示為一個 A 圖標，表示這個文件已經被 git add 暫存。
+  - C: Copied 文件，表示這個文件是從另一個文件複製過來的。
+  - D: Deleted 文件（已刪除的文件），表示這個文件已被刪除。
+  - R: Renamed 文件，表示這個文件已被重命名。
 - ```git commit -m "commit msg"```：提交當前節點，並輸入commit message(這個commit做了哪些事，更新了什麼東西？)
 - ```git log```：查看log(按q退出log mode)，詳細顯示操作的ID(hash value)，及相關資訊
 - ```git log --oneline```：查看簡要log，每個操作1行，只顯示ID和簡要資訊
