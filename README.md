@@ -75,7 +75,7 @@ Git常用指令(背)
 
 ***
 
-The right process for collaborating with Git and GitHub
+The CORRECT process for collaborating with Git and GitHub
 ---
 ***You should follow this process. Even if you are the only one working on the project.***
 - **編輯子分支，再push上去remote，接著經過code review沒問題了，再merge到main分支，合併完後再刪除子分支**
