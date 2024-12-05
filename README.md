@@ -46,9 +46,9 @@ git push -u origin main
 
 Git常用指令(背)
 ---
-- ```git add file1 file2... / git add *.副檔名 / git add .```：
-  (1) 將未追蹤的file加入git追蹤/將特定副檔名的file加入git追蹤/全部file納入git追蹤(通常都是直接```git add .```)，有新的file就要用
-  (2) 變更納入暫存區(存檔到git)，很常用，時不時就會輸入一次```git add .```來儲存狀態，刪檔案也要
+- ```git add file1 file2... / git add *.副檔名 / git add .```：  
+  (1) 將未追蹤的file加入git追蹤/將特定副檔名的file加入git追蹤/全部file納入git追蹤(通常都是直接```git add .```)，有新的file就要用  
+  (2) 變更納入暫存區(存檔到git)，很常用，時不時就會輸入一次```git add .```來儲存狀態，刪檔案也要  
 - ```git status```：查看當前file的狀態
   - 文件有以下幾種狀態，在 VS Code 中，這些文件狀態會用不同的代號來表示：
   - U: Untracked 文件（未追蹤的文件），在左側文件資源管理器中會顯示一個 U 圖標
@@ -86,7 +86,7 @@ The right process for collaborating with Git and GitHub
 - Step5：```git add .```
 - Step6：```git commit -m "commit msg"``` commit changes and create a node on sub-branch
 - Step7：```git push origin my-feature(custom sub-branch name)``` push sub-branch onto GitHub  
-  **if failed** => version conflict occurred(main branch updates after you cloned it)
+  **if failed** => version conflict occurred(main branch updates after you cloned it)  
   **Solution：sync latest version main branch to your sub-branch**
   - (1) ```git checkout main```
   - (2) ```git pull origin main```
@@ -101,9 +101,9 @@ The right process for collaborating with Git and GitHub
 - Step8：Click **"New Pull Request"** on GitHub and request code reviews and merges from other members.
   - After completing the code review and confirming that there is no problem, the sub-branch can be **"Squash and Merge"***(It will be deleted atomically after merged)* to main branch.
 - Step9：
-  - **if your sub-branch is merged to main branch on GitHub successfully:**
-    (1) ```git checkout main```
-    (2) ```git branch -D my-feature(custom sub-branch name)```：delete sub-branch on the local end
-    (3) ```git pull origin main```：update main branch to latest version
-  - **else if pull request failed(Usually the program is returned due to errors):**
+  - **if your sub-branch is merged to main branch on GitHub successfully:**  
+    (1) ```git checkout main```  
+    (2) ```git branch -D my-feature(custom sub-branch name)```：delete sub-branch on the local end  
+    (3) ```git pull origin main```：update main branch to latest version  
+  - **else if pull request failed(Usually the program is returned due to errors):**  
     goto Step3
