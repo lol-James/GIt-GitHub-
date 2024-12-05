@@ -87,17 +87,17 @@ The right process for collaborating with Git and GitHub
 - Step6：```git commit -m "commit msg"``` commit changes and create a node on sub-branch
 - Step7：```git push origin my-feature(custom sub-branch name)``` push sub-branch onto GitHub
   - **if failed** => version conflict occurred(main branch updates after you cloned it)
-  - Solution：sync latest version main branch to your sub-branch
-  (1) ```git checkout main```
-  (2) ```git pull origin main```
-  (3) ```git checkout my-feature(custom sub-branch name)```
-  (4) ```git rebase main```
-  (5) Solve version conflict
-  (6) ```git add .```
-  (7-1) ```git rebase --continue```：Continue to rebase
-  (7-2) ```git rebase --abort```：Abort rebase and restore (undo all previous rebase operations)
-  (8) After completing rebase operation, ```git push -f origin my-feature(custom sub-branch name)```
-  (9) If failed, goto (1)
+  **Solution：sync latest version main branch to your sub-branch**
+  - (1) ```git checkout main```
+  - (2) ```git pull origin main```
+  - (3) ```git checkout my-feature(custom sub-branch name)```
+  - (4) ```git rebase main```
+  - (5) Solve version conflict
+  - (6) ```git add .```
+  - (7-1) ```git rebase --continue```：Continue to rebase
+  - (7-2) ```git rebase --abort```：Abort rebase and restore (undo all previous rebase operations)
+  - (8) After completing rebase operation, ```git push -f origin my-feature(custom sub-branch name)```
+  - (9) If failed, goto (1)
 - Step8：Click **"New Pull Request"** on GitHub and request code reviews and merges from other members.
   - After completing the code review and confirming that there is no problem, the sub-branch can be **"Squash and Merge"***(It will be deleted atomically after merged)* to main branch.
 - Step9：
