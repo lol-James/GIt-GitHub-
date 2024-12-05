@@ -18,6 +18,7 @@ Git installation
 
 Project folder initialization
 ---
+*此為從零開始建立一個新Project或將一個尚未被Git追蹤的Project加入追蹤並存到GitHub，如果是要從GitHUb上抓Project下來做的話，請看最後一part*
 ### Step1：新增專案資料夾(所有的程式及相關檔案都放在這個資料夾內)，終端機的path切換到當前資料夾，使用git bash終端機或cmd都可以
 ### Step2：終端機輸入```git init```，做專案資料夾初始化，此時會自動新增git資料夾用來存放版本控制相關檔案
 ### Step3：自行新增檔案：
