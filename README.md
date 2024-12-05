@@ -40,7 +40,7 @@ git push -u origin main
 ### Compelete Project folder initialization
 ### Step6：視情況從該repo/settings/Collaborators添加協作者
 ### Step7：之後如果要更新local端的記錄到remote上的話，只需```git push```
-- ==***但極度不建議直接這樣做***==，後面會說明正確做法
+- ***但極度不建議直接這樣做***，後面會說明正確做法
 
 ***
 
@@ -76,7 +76,7 @@ Git常用指令(背)
 
 The right process for collaborating with Git and GitHub
 ---
-==***You should follow this process. Even if you are the only one working on the project.***==
+***You should follow this process. Even if you are the only one working on the project.***
 - **編輯子分支，再push上去remote，接著經過code review沒問題了，再merge到main分支，合併完後再刪除子分支**
 - 使用此方法可確保main branch的穩定性，防止main branch的歷史變得混亂
 - Step1：```git clone URL.git(此repo的網址)```
